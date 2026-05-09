@@ -1,0 +1,66 @@
+{
+  "entities": {
+    "UserConfig": {
+      "title": "User Calculation Data",
+      "description": "Stores the calculator state for a specific user.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "animalType": { "type": "string", "enum": ["cow", "goat", "camel", "buffalo"] },
+        "shareholders": { "type": "array" },
+        "liveWeight": { "type": "number" },
+        "meatRate": { "type": "number" },
+        "niyyahConfirmed": { "type": "boolean" },
+        "costEntryFee": { "type": "number" },
+        "costManagement": { "type": "number" },
+        "costOthers": { "type": "number" },
+        "distributionFamily": { "type": "number" },
+        "distributionRelative": { "type": "number" },
+        "distributionSadaqah": { "type": "number" },
+        "meatPerPacket": { "type": "number" },
+        "manualTotalMeat": { "type": "number" },
+        "compositionMeat": { "type": "number" },
+        "compositionFat": { "type": "number" },
+        "compositionBones": { "type": "number" },
+        "yieldLiveWeight": { "type": "number" },
+        "yieldActualMeat": { "type": "number" },
+        "distributionItems": { "type": "array" },
+        "payments": { "type": "object" },
+        "unlocked": { "type": "boolean" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      }
+    },
+    "Payment": {
+      "title": "Payment Record",
+      "description": "Stores transaction details verified by admin.",
+      "type": "object",
+      "properties": {
+        "txnId": { "type": "string" },
+        "userId": { "type": "string" },
+        "amount": { "type": "number" },
+        "timestamp": { "type": "string", "format": "date-time" },
+        "status": { "type": "string", "enum": ["pending", "verified", "rejected"] }
+      }
+    },
+    "ShareholderPayment": {
+      "title": "Shareholder Payment",
+      "description": "Details of payment made by a specific shareholder.",
+      "type": "object",
+      "properties": {
+        "amount": { "type": "number" },
+        "method": { "type": "string" },
+        "note": { "type": "string" }
+      }
+    }
+  },
+  "firestore": {
+    "/users/{userId}/data/config": {
+      "schema": "UserConfig",
+      "description": "User specific calculator configuration."
+    },
+    "/payments/{txnId}": {
+      "schema": "Payment",
+      "description": "Global payment records."
+    }
+  }
+}

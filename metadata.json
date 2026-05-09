@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Sahaj Qurbani",
+  "description": "কুরবানির সব হিসাব এক জায়গায় - সঠিক নিয়মে, সহজ হিসাবে।",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": []
+}
