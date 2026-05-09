@@ -65,13 +65,13 @@ export const Header: React.FC<HeaderProps> = ({
           onClick={onCalculatorClick}
           className="text-primary/60 hover:text-primary text-[10px] md:text-sm font-bold transition-colors cursor-pointer whitespace-nowrap bg-primary/5 px-3 md:px-5 py-2 rounded-full hover:bg-primary/10 border border-transparent hover:border-primary/10"
         >
-          ক্যালকুলেটর
+          Calculator
         </button>
         <button 
           onClick={onGuidanceClick}
           className="text-primary/60 hover:text-primary text-[10px] md:text-sm font-bold transition-colors cursor-pointer whitespace-nowrap bg-primary/5 px-3 md:px-5 py-2 rounded-full hover:bg-primary/10 border border-transparent hover:border-primary/10"
         >
-          ইসলামিক গাইড
+          Islamic Guide
         </button>
       </div>
       
@@ -91,7 +91,7 @@ export const Header: React.FC<HeaderProps> = ({
               )}
               <div className="hidden lg:flex flex-col items-start overflow-hidden max-w-[120px] leading-tight">
                 <span className="text-[10px] font-black text-primary truncate w-full">
-                  {user.displayName || 'ব্যবহারকারী'}
+                  {user.displayName || 'User'}
                 </span>
                 <span className="text-[9px] font-mono text-primary/30 truncate w-full">{user.phoneNumber}</span>
               </div>
@@ -110,7 +110,7 @@ export const Header: React.FC<HeaderProps> = ({
             className="flex items-center gap-2 bg-primary text-white px-6 py-2.5 rounded-full text-xs font-bold hover:bg-black transition-all shadow-md active:scale-95"
           >
             <UserIcon className="w-4 h-4" />
-            লগইন
+            Login
           </button>
         )}
       </div>
