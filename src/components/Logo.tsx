@@ -52,13 +52,13 @@ export const Logo: React.FC<LogoProps> = ({
             size === 'xl' ? 'text-4xl md:text-6xl' :
             size === 'lg' ? 'text-2xl md:text-4xl' : 
             size === 'md' ? 'text-xl md:text-2xl' : 
-            'text-base md:text-lg'
+            'text-[13px] xs:text-sm sm:text-base md:text-lg'
           } font-serif font-bold leading-[0.9] tracking-tight whitespace-nowrap flex flex-col`}>
-            <span>Sahaj</span>
-            <span className="italic text-accent-dark">Qurbani</span>
+            <span>সহজ</span>
+            <span className="italic text-accent-dark">কুরবানি</span>
           </div>
           <span className={`${size === 'xl' ? 'text-sm' : size === 'lg' ? 'text-xs' : 'text-[9px]'} hidden md:block tracking-tight opacity-40 font-bold mt-1 whitespace-nowrap`}>
-            Your Digital Accountant
+            আপনার ডিজিটাল হিসাব রক্ষক
           </span>
         </div>
       )}

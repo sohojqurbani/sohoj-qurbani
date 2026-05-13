@@ -39,9 +39,17 @@ export const Hero: React.FC<HeroProps> = ({ onCalculatorClick, onGuidanceClick }
           />
 
           {/* Environmental Overlay for Vibrancy */}
-          <div className="absolute inset-0 bg-gradient-to-b from-primary/60 via-transparent to-primary/80 z-0" />
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,transparent_0%,rgba(6,78,59,0.5)_100%)] z-0" />
-          <div className="absolute inset-0 mix-blend-overlay opacity-20 bg-[url('https://www.transparenttextures.com/patterns/p6.png')] z-0" />
+          <div className="absolute inset-0 bg-gradient-to-b from-primary/60 via-transparent to-primary/95 z-0" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(212,255,63,0.15)_0%,transparent_70%)] z-0" />
+          <div className="absolute inset-0 mix-blend-soft-light opacity-30 bg-[url('https://www.transparenttextures.com/patterns/p6.png')] z-0" />
+          
+          {/* Islamic Geometric Pattern Overlay */}
+          <div className="absolute inset-0 opacity-[0.07] z-0 pointer-events-none" 
+            style={{
+              backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l15 30H15L30 0zM30 60L15 30h30L30 60zM0 30l30-15v30L0 30zM60 30L30 45V15l30 15z' fill='%23ffffff' fill-opacity='1' fill-rule='evenodd'/%3E%3C/svg%3E")`,
+              backgroundSize: '40px 40px'
+            }}
+          />
 
           {/* Morning Sunlight "God Rays" */}
           <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
@@ -79,7 +87,7 @@ export const Hero: React.FC<HeroProps> = ({ onCalculatorClick, onGuidanceClick }
             </svg>
           </div>
           
-          <div className="relative z-10 max-w-3xl mx-auto">
+          <div className="relative z-10 max-w-3xl mx-auto bg-black/10 backdrop-blur-xl rounded-[32px] md:rounded-[64px] p-8 md:p-12 border border-white/5 shadow-2xl">
             <motion.div
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -98,7 +106,7 @@ export const Hero: React.FC<HeroProps> = ({ onCalculatorClick, onGuidanceClick }
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="text-5xl md:text-8xl font-serif text-white leading-[1] mb-8"
+              className="text-4xl xs:text-5xl md:text-8xl font-serif text-white leading-[1] mb-8"
             >
               সহজ <span className="italic text-accent">কুরবানি</span>
             </motion.h1>
