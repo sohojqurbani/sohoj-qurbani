@@ -60,7 +60,7 @@ export const Header: React.FC<HeaderProps> = ({
         </button>
       </div>
       
-      <div className="flex-1 flex items-center justify-start gap-1.5 sm:gap-2 md:gap-4 ml-1.5 sm:ml-4 md:ml-0 overflow-hidden">
+      <div className="flex-1 flex items-center justify-center gap-1.5 sm:gap-2 md:gap-4 overflow-hidden">
         <button 
           onClick={onCalculatorClick}
           className="text-primary/60 hover:text-primary text-[11px] xs:text-[12px] sm:text-[13px] md:text-sm font-bold transition-colors cursor-pointer whitespace-nowrap bg-primary/5 px-2.5 xs:px-3.5 sm:px-4 md:px-5 py-1.5 sm:py-2 rounded-full hover:bg-primary/10 border border-transparent hover:border-primary/10"
@@ -75,7 +75,7 @@ export const Header: React.FC<HeaderProps> = ({
         </button>
       </div>
       
-      <div className="flex items-center gap-0.5 sm:gap-3 mr-1 xs:mr-2 sm:mr-0">
+      <div className="flex items-center gap-0.5 sm:gap-3">
         {user ? (
           <div className="flex items-center gap-0.5 sm:gap-2">
             <button 

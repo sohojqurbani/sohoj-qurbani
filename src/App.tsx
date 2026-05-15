@@ -127,7 +127,7 @@ export default function App() {
   const handleUnlock = async (txnId: string) => {
     if (txnId) {
       if (user) {
-        await savePayment(user.uid, txnId, 100); // Fixed 100 BDT for demo
+        await savePayment(user.uid, txnId, 19); 
         // In real app, cloud function verifies. Here we unlock immediately as per user prompt scope.
         await saveUserData(user.uid, { ...state, unlocked: true });
       }
