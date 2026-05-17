@@ -20,7 +20,7 @@ import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { Features } from './components/Features';
 import { IslamicReferences } from './components/IslamicReferences';
-import { UnlockModal } from './components/UnlockModal';
+import UnlockModal from './components/UnlockModal';
 import { UnlockSplash } from './components/UnlockSplash';
 import { IslamicGuide } from './components/IslamicGuide';
 import { LiveWeightModal } from './components/LiveWeightModal';
